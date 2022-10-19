@@ -9,7 +9,7 @@ function ProductScreen() {
 const product = products.find((p) => p._id === (id));
   return (
     <div>
-      <Link to='/' className='btn btn-light my-3'>go back</Link>
+      <Link to='/' className='btn btn-light my-3'>Go back</Link>
       <Row>
         <Col md={6}>
           <Image src={product.image} alt='product.name' fluid/>
@@ -43,7 +43,7 @@ const product = products.find((p) => p._id === (id));
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
-                <Button className='btn-block' type='button' disabled={product.countInStock == 0}>Add to cart</Button>
+                <Button className='btn-block' type='button' disabled={product.countInStock === 0}>Add to cart</Button>
               </ListGroup.Item>
             </ListGroup>
           </Card>

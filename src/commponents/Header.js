@@ -5,7 +5,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 function Header() {
   return (
     <header>
-      <Navbar bg="dark" variant='dark' expand="lg" collapseOnSelect>
+      <Navbar className='navbar navbar-expand-lg navbar-dark bg-primary' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand>Zaika</Navbar.Brand>
